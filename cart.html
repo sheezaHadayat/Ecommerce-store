@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- <a href="index.html"></a> -->
     <title>E-Commerce Storet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -53,75 +54,23 @@
         </div>
     </nav>
 
-    <!-- heading  -->
-    <div>
-        <h2 style="font-family: bahnschrift;color:#100F3D;margin-top: 40px;text-align: center;font-weight: bold;">Your
-            Product Add to Cart</h2>
+     <!-- Cart Page -->
+<div class="container cart-page">
+    <h1>Cart</h1>
+    <div id="cart-items">
+      <!-- Cart items will be dynamically added here -->
     </div>
-    <!--Products  -->
-    <div class="container h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col">
-                <div class="card mb-4">
-                    <div class="card-body p-4">
-
-                        <div class="row align-items-center">
-                            <div class="col-md-2">
-                                <img src="/images/pro2.png" class="img-fluid" alt="Generic placeholder image"
-                                    style="width: 100px;height: 100px;">
-                            </div>
-                            <div class="col-md-2 d-flex justify-content-center">
-                                <div>
-                                    <p class="small text-muted mb-4 pb-2">Name</p>
-                                    <p class="lead fw-normal mb-0">Iphone</p>
-                                </div>
-                            </div>
-                            <div class="col-md-2 d-flex justify-content-center">
-                                <div>
-                                    <p class="small text-muted mb-4 pb-2">Color</p>
-                                    <p class="lead fw-normal mb-0"><i class="fas fa-circle me-2"
-                                            style="color: #fdd8d2;"></i>
-                                        Red</p>
-                                </div>
-                            </div>
-                            <div class="col-md-2 d-flex justify-content-center">
-                                <div>
-                                    <p class="small text-muted mb-4 pb-2">Quantity</p>
-                                    <p class="lead fw-normal mb-0">1</p>
-                                </div>
-                            </div>
-                            <div class="col-md-2 d-flex justify-content-center">
-                                <div>
-                                    <p class="small text-muted mb-4 pb-2">Price</p>
-                                    <p class="lead fw-normal mb-0">300,000 Rs</p>
-                                </div>
-                            </div>
-                            <div class="col-md-2 d-flex justify-content-center">
-                                <div>
-                                    <p class="small text-muted mb-4 pb-2">Total</p>
-                                    <p class="lead fw-normal mb-0">300,000 Rs</p>
-                                </div>
-                            </div>
-                          
-                        </div>
-                    </div>
-                </div>
-
-            
+  </div>
+  
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-light btn-lg me-2" style="margin-bottom:30px;">Continue shopping</button>
-                    <button type="button" class="btn btn-lg" style="background-color: #fac104;color: white; margin-bottom: 30px;">Add to
-                        cart</button>
+                    <button type="button" class="btn btn-light btn-lg me-2" style="margin-bottom:30px; background-color: #04d5fa;color: white; margin-top: 20px;" onclick="window.location.href='products.html'">Continue shopping</button>
+                    <button type="button" class="btn btn-lg " style="background-color: #fac104;color: white; margin-bottom: 30px; margin-right: 100px; margin-top: 20px;">Buy</button>
                 </div>
 
-            </div>
-        </div>
-    </div>
-
-
+<script src="script.js"></script>
 
     <!-- Footer -->
-    <footer class="page-footer font-small" style="background-color: #0F0D3D;color: white;">
+    <footer class="page-footer font-small" style="background-color: #0F0D3D; color: white; margin-bottom: 0;">
 
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
@@ -207,7 +156,7 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <div class="footer-copyright text-center py-3">&copy; 2020 Copyright:
             <a href="/" style="text-decoration: none;color: white;"> ecommerce-store.com</a>
         </div>
         <!-- Copyright -->

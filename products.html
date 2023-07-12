@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- <a href="cart.html"></a> -->
     <title>E-Commerce Storet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
@@ -48,31 +49,36 @@
   </div>
 
   <!-- Cards -->
+
+
   <div class="row row-cols-1 row-cols-md-4 g-4" style="margin:40px">
     <div class="col">
-      <div class="card" style=" box-shadow: 10px 10px 5px lightgrey;">
+      <div class="card " style=" box-shadow: 10px 10px 5px lightgrey;">
+        
         <center><img src="images/pro1.png" class="card-img-top" alt="image" style="width: 200px; height:200px"></center>
         <div class="card-body">
           <h5 class="card-title" style="color:#100F3D;font-family: bahnschrift;font-weight: bold;text-align: center;">Smart Watch</h5>
-          <div style="text-align: center;margin-top: -10px;">⭐⭐⭐⭐⭐</div>
+          <div style="text-align: center;margin-top: -10px;">⭐⭐⭐</div>
           <h5 style="color: #fac104;text-align: center;font-family: bahnschrift;font-weight: bold;">4,999 Rs</h5>
           <p class="card-text" style="font-family: bahnschrift;text-align: justify;">Our Smart Watch combines style, functionality, and cutting-edge technology to enhance your daily life. With its sleek design and advanced features, it's more than just a timepiece.</p>
-          <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;">Buy Now</button></center>
-         </div>
+          <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;" onclick="addToCart('Smart Watach', 4999)">Add to Cart</button></center>
+        </div>
       </div>
     </div>
+
     <div class="col">
-      <div class="card" style=" box-shadow: 10px 10px 5px lightgrey;">
+      <div class="card"  style=" box-shadow: 10px 10px 5px lightgrey;">
         <img src="images/pro2.png" class="card-img-top" alt="image" style="width: 200px; height:200px">
         <div class="card-body">
           <h5 class="card-title" style="color:#100F3D;font-family: bahnschrift;font-weight: bold;text-align: center;">Iphone</h5>
           <div style="text-align: center;margin-top: -10px;">⭐⭐⭐⭐</div>
           <h5 style="color: #fac104;text-align: center;font-family: bahnschrift;font-weight: bold;">300,000 Rs</h5>
           <p class="card-text" style="font-family: bahnschrift;text-align: justify;">The iPhone is a revolutionary smartphone that has redefined the way we communicate, work, and stay entertained. Packed with powerful features and a sleek design.</p>
-          <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;">Buy Now</button></center>
+          <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;" onclick="addToCart('Iphone', 300000)">Add to Cart</button></center>
         </div>
       </div>
     </div>
+    
     <div class="col">
       <div class="card" style=" box-shadow: 10px 10px 5px lightgrey;">
         <img src="images/pro3.png" class="card-img-top" alt="image" style="width: 200px; height:200px">
@@ -81,10 +87,13 @@
         <div style="text-align: center;margin-top: -10px;">⭐⭐⭐⭐⭐</div>
         <h5 style="color: #fac104;text-align: center;font-family: bahnschrift;font-weight: bold;">130,000 Rs</h5>
         <p class="card-text" style="font-family: bahnschrift;text-align: justify;">Our laptops are designed to empower you with the ultimate computing experience, whether you're working, studying, or enjoying entertainment on the go. Combining sleek design.</p>
-        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;">Buy Now</button></center>
+        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;" onclick="addToCart('Laptop', 130000)">Add to Cart</button></center>
       </div>
       </div>
     </div>
+
+ 
+
     <div class="col">
       <div class="card" style=" box-shadow: 10px 10px 5px lightgrey;">
         <img src="images/pro4.png" class="card-img-top" alt="image" style="width: 200px; height:200px">
@@ -93,7 +102,7 @@
           <div style="text-align: center;margin-top: -10px;">⭐⭐⭐⭐⭐</div>
           <h5 style="color: #fac104;text-align: center;font-family: bahnschrift;font-weight: bold;">7,999 Rs</h5>
           <p class="card-text" style="font-family: bahnschrift;text-align: justify;">Our dress coat is the epitome of timeless elegance and sophisticated style. Crafted with meticulous attention to detail, it is designed to elevate your formal attire and make a lasting impression.</p>
-          <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;">Buy Now</button></center>
+          <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;" onclick="addToCart('Dress', 7999)">Add to Cart</button></center>
        </div>
       </div>
     </div>
@@ -111,10 +120,13 @@
         <div style="text-align: center;margin-top: -10px;">⭐⭐⭐⭐⭐</div>
         <h5 style="color: #fac104;text-align: center;font-family: bahnschrift;font-weight: bold;">1,999 Rs</h5>
         <p class="card-text" style="font-family: bahnschrift;text-align: justify;">Stay hydrated on the go with our high-quality water bottle. Designed for convenience and sustainability, it is the perfect companion for your active lifestyle.</p>
-        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;">Buy Now</button></center>
+        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;" onclick="addToCart('Water Bottle', 1999)">Add to Cart</button></center>
       </div>
     </div>
   </div>
+  
+
+
   <div class="col">
     <div class="card" style=" box-shadow: 10px 10px 5px lightgrey;">
       <center><img src="/images/pro6.png" class="card-img-top" alt="product2" style="height:200px;width: 200px;"></center>
@@ -123,35 +135,43 @@
         <div style="text-align: center;margin-top: -10px;">⭐⭐⭐⭐</div>
         <h5 style="color: #fac104;text-align: center;font-family: bahnschrift;font-weight: bold;">3,999 Rs</h5>
         <p class="card-text" style="font-family: bahnschrift;text-align: justify;">Beat the heat and stay cool with our powerful and efficient electric fan. Designed to provide refreshing airflow, it is the perfect solution for hot summer days and stuffy environments.</p>
-        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;">Buy Now</button></center>
+        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;" onclick="addToCart('Electric Fan', 3999)">Add to Cart</button></center>
       </div>
     </div>
   </div>
+  
+
+
   <div class="col">
-    <div class="card" style=" box-shadow: 10px 10px 5px lightgrey;">
-      <center><img src="/images/pro7.png" class="card-img-top" alt="product3" style="height:200px;width: 200px;"></center>
+    <div class="card"  id="product1" style=" box-shadow: 10px 10px 5px lightgrey;">
+      <center><img src="/images/pro7.png" class="card-img-top" alt="image" style="height:200px;width: 200px;"></center>
       <div class="card-body">
         <h5 class="card-title" style="color:#100F3D;font-family: bahnschrift;font-weight: bold;text-align: center;">Bag</h5>
-        <div style="text-align: center;margin-top: -10px;">⭐⭐⭐</div>
+        <div style="text-align: center;margin-top: -10px;">⭐⭐⭐⭐⭐</div>
         <h5 style="color: #fac104;text-align: center;font-family: bahnschrift;font-weight: bold;">1,599 Rs</h5>
         <p class="card-text" style="font-family: bahnschrift;text-align: justify;">Discover the perfect blend of style, functionality, and durability with our versatile bags. Designed to suit your everyday needs, our bags are crafted with meticulous.</p>
-        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;">Buy Now</button></center>
+        <!-- <a href="cart.html" style="font-family: bahnschrift;color: white;background-color: #fac104; padding: 10px 20px; text-decoration: none;" >Buy</a> -->
+        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;" onclick="addToCart('Bag', 1599)">Add to Cart</button></center>
       </div>
     </div>
   </div>
+ 
+
+
   <div class="col">
     <div class="card" style=" box-shadow: 10px 10px 5px lightgrey;">
       <center><img src="/images/pant.png" class="card-img-top" alt="product4" style="height:200px;width: 200px;"></center>
       <div class="card-body">
         <h5 class="card-title" style="color:#100F3D;font-family: bahnschrift;font-weight: bold;text-align: center;">Pant</h5>
-        <div style="text-align: center;margin-top: -10px;">⭐⭐⭐⭐</div>
+        <div style="text-align: center;margin-top: -10px;">⭐⭐⭐⭐⭐</div>
         <h5 style="color: #fac104;text-align: center;font-family: bahnschrift;font-weight: bold;">1,999 Rs</h5>
         <p class="card-text" style="font-family: bahnschrift;text-align: justify;">Elevate your wardrobe with our stylish and comfortable pants. Designed with a perfect blend of fashion and functionality, our pants offer versatility for both casual and formal occasions.</p>
-        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;">Buy Now</button></center>
+        <center><button class="btn btn-outline-light" style="font-family: bahnschrift;color: white;background-color: #fac104;" onclick="addToCart('Pant', 1999)">Add to Cart</button></center>
       </div>
     </div>
   </div>
 </div>
+
 <!-- Footer -->
 
   
@@ -243,7 +263,7 @@
   <!-- Copyright -->
 
 </footer>
-
+<script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>

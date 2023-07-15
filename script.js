@@ -17,7 +17,8 @@ function addToCart(productName, price) {
   localStorage.setItem('cart', JSON.stringify(cart));
 
   // Provide a visual indication that the item has been added to the cart (optional)
-  alert(`Added ${productName} to cart!`);
+   alert(`Added ${productName} to cart!`);
+ 
 }
 
 // Display cart on the cart.html page
